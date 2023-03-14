@@ -30,7 +30,7 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link">Studio</a>
+              <a href="./index.html" class="header-link link current">Studio</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link link">Portfolio</a>
@@ -63,7 +63,9 @@
       <section class="hero-main">
         <div class="container bgimage">
           <h1 class="hero-main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-main-btn">Order Service</button>
+          <button type="button" data-modal-open class="hero-main-btn">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Переваги -->
@@ -410,5 +412,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close">
+          <svg>
+            <use>X</use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
